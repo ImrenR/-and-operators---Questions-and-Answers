@@ -62,3 +62,32 @@ const productInCart=true;
 const shop= discountCodeEntered && productInCart ? "Discount can be applied" : "Discount cannot be applied"
 
 console.log(shop);
+
+//? Question 8 :  If a profile contains both profilePhoto and aboutInfo, return "Profile complete". Otherwise, return "Profile incomplete".
+const profilePhoto= "Imren";
+const aboutInfo="";
+
+if(profilePhoto && aboutInfo) {
+  console.log("Profile completed");
+}else{
+  console.log("Profile incomplete");
+}
+//? Question 9 : To share a post, both title and content must be filled. Otherwise, return the message "Post incomplete."
+
+const title = "All About Us";
+const content = undefined;
+
+if(title && content){
+  console.log("Post completed");
+
+}else{
+  console.log("Post incompleted")
+}
+
+//? Question 10 : To attend an event, both ticketPurchased and ageLimitEligible must be true. Otherwise, return "Participation not allowed."
+
+const ticketPurchased= true;
+const ageLimitEligible=true;
+
+const shop1 = ticketPurchased && ageLimitEligible ? console.log("Participation allowed")
+   :console.log("Participation not allowed")
